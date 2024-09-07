@@ -2,7 +2,7 @@ import requests
 import time
 from datetime import datetime, timedelta
 
-API_KEY = '55KKDRGTSCHDCYU14T48EDYJSASRNQNW8U'
+API_KEY = ''
 ETHERSCAN_API_URL = 'https://api.etherscan.io/api'
 
 def get_transactions(wallet_address):
