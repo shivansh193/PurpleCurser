@@ -9,7 +9,6 @@ def get_transactions(wallet_address):
     url = f"{ETHERSCAN_API_URL}?module=account&action=txlist&address={wallet_address}&startblock=0&endblock=99999999&sort=asc&apikey={API_KEY}"
     response = requests.get(url)
     data = response.json()
-    
     if data['status'] == '1':
         return data['result']
     else:
